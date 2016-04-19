@@ -1,0 +1,16 @@
+#N canvas 677 143 320 349 12;
+#X declare -lib mrpeach;
+#X obj 92 -72 unpackOSC;
+#X obj 92 -129 import mrpeach;
+#X floatatom 91 8 5 0 0 0 - - -;
+#X obj 92 -99 udpreceive 59120;
+#X obj 92 -18 unpack f;
+#X obj 161 -18 unpack s f;
+#X floatatom 160 15 5 0 0 0 - - -;
+#X obj 92 -44 routeOSC /1/x /modified/x;
+#X connect 0 0 7 0;
+#X connect 3 0 0 0;
+#X connect 4 0 2 0;
+#X connect 5 1 6 0;
+#X connect 7 0 4 0;
+#X connect 7 1 5 0;
