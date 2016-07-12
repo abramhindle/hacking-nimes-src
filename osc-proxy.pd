@@ -1,27 +1,29 @@
-#N canvas 756 126 530 574 10;
-#X msg 116 419 connect 127.0.0.1 9997;
-#X obj 116 398 loadbang;
+#N canvas 481 75 407 691 10;
+#X msg 105 400 connect 127.0.0.1 9997;
+#X obj 105 379 loadbang;
 #X msg 109 39 listen 57120;
 #X obj 109 18 loadbang;
 #X obj 109 60 netreceive -u -b;
 #X obj 109 81 oscparse;
 #X obj 109 102 list trim;
-#X obj 116 440 netsend -u -b;
-#X obj 101 313 list prepend send;
-#X obj 101 334 list trim;
+#X obj 105 421 netsend -u -b;
+#X obj 107 324 list prepend send;
+#X obj 107 345 list trim;
 #X text 319 272 might be missing a symbol;
-#X obj 63 23 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 101 1 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 245 184 print RECV;
 #X obj 108 152 route x;
-#X obj 6 169 print Route1;
-#X obj 101 292 oscformat /modified/x;
+#X obj 241 156 print Route1;
+#X obj 107 303 oscformat /modified/x;
 #X obj 109 175 unpack s f;
 #X symbolatom 108 203 22 0 0 0 - - -, f 22;
 #X floatatom 209 216 5 0 0 0 - - -, f 5;
 #X obj 108 128 route one;
-#X obj 102 256 pack s f, f 7;
+#X obj 108 267 pack s f, f 7;
 #X obj 206 243 * 1.3;
+#X obj 285 300 vsl 200 260 0 164 0 0 empty empty empty 0 -9 0 10 -260097
+-1 -1 22284 1;
 #X connect 0 0 7 0;
 #X connect 1 0 0 0;
 #X connect 2 0 4 0;
@@ -44,3 +46,4 @@
 #X connect 19 0 14 0;
 #X connect 20 0 15 0;
 #X connect 21 0 20 1;
+#X connect 21 0 22 0;
