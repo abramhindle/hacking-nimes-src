@@ -1,0 +1,21 @@
+#N canvas 328 317 463 449 10;
+#X obj 81 332 loadbang;
+#X obj 64 395 netsend -u -b;
+#X obj 63 262 list prepend send;
+#X obj 63 288 list trim;
+#X floatatom 63 208 5 0 0 0 - - -, f 5;
+#X obj 170 310 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 62 -13 vsl 500 200 0 127 0 0 empty empty empty 0 -9 0 10 -232576
+-1 -1 6800 1;
+#X obj 63 234 oscformat /one/x;
+#X msg 81 363 connect 127.0.0.1 59120;
+#X text 220 286 I SEND MESSAGES TO 59120;
+#X connect 0 0 8 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
+#X connect 4 0 7 0;
+#X connect 5 0 8 0;
+#X connect 6 0 4 0;
+#X connect 7 0 2 0;
+#X connect 8 0 1 0;
