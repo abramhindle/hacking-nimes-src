@@ -1,24 +1,24 @@
-#N canvas 892 82 473 684 12;
-#X obj 134 31 loadbang;
-#X obj 133 222 route one modified;
-#X floatatom 134 310 5 0 0 0 - - -, f 5;
-#X obj 133 276 unpack f;
-#X floatatom 217 309 5 0 0 0 - - -, f 5;
-#X obj 134 250 route x;
-#X obj 204 249 route x;
-#X obj 212 279 unpack f;
-#X obj 143 4 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#N canvas 892 76 473 690 12;
+#X obj 91 41 loadbang;
+#X obj 90 232 route one modified;
+#X floatatom 91 320 5 0 0 0 - - -, f 5;
+#X obj 90 286 unpack f;
+#X floatatom 174 319 5 0 0 0 - - -, f 5;
+#X obj 91 260 route x;
+#X obj 161 259 route x;
+#X obj 169 289 unpack f;
+#X obj 100 14 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 134 63 listen 59120;
-#X obj 134 93 netreceive -u -b;
-#X obj 149 191 print osc-recv;
-#X obj 133 126 oscparse;
-#X obj 133 159 list trim;
-#X text 316 49 I RECEIVE OSC MESSAGES ON port 59120;
-#X obj 63 360 vsl 200 260 0 164 0 0 empty empty empty 0 -9 0 10 -232576
--1 -1 17141 1;
-#X obj 277 360 vsl 200 260 0 164 0 0 empty empty empty 0 -9 0 10 -260097
--1 -1 22284 1;
+#X msg 91 73 listen 59120;
+#X obj 91 103 netreceive -u -b;
+#X obj 106 201 print osc-recv;
+#X obj 90 136 oscparse;
+#X obj 90 169 list trim;
+#X text 273 59 I RECEIVE OSC MESSAGES ON port 59120;
+#X obj 20 370 vsl 200 260 0 164 0 0 empty empty empty 0 -9 0 10 -232576
+-1 -1 11210 1;
+#X obj 234 370 vsl 200 260 0 164 0 0 empty empty empty 0 -9 0 10 -260097
+-1 -1 14573 1;
 #X connect 0 0 9 0;
 #X connect 1 0 5 0;
 #X connect 1 1 6 0;
