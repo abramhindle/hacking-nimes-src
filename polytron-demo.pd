@@ -1,4 +1,4 @@
-#N canvas 820 58 541 708 10;
+#N canvas 818 58 547 708 10;
 #X obj 151 412 dac~;
 #X floatatom 133 -30 5 0 0 0 - - -, f 5;
 #X floatatom 185 -30 5 0 0 0 - - -, f 5;
@@ -7,17 +7,17 @@
 #X obj 101 -3 *;
 #X obj 185 4 *;
 #X obj 112 -155 vsl 15 128 20 4400 0 0 empty empty empty 0 -9 0 10
--262144 -1 -1 0 1;
+-262144 -1 -1 6600 1;
 #X obj 255 -150 vsl 15 128 20 1760 1 0 empty empty empty 0 -9 0 10
--262144 -1 -1 0 1;
+-262144 -1 -1 1500 1;
 #X obj 138 -206 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 8200 1;
 #X obj 193 -217 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 9700 1;
 #X obj 62 50 polytron;
 #X obj 277 50 polytron;
 #X obj 68 -158 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 6400 1;
 #X obj 327 -196 loadbang;
 #X obj 326 -5 route one modified;
 #X obj 327 23 route x;
@@ -29,6 +29,7 @@
 #X obj 326 -68 list trim;
 #X obj 342 -36 print polytron;
 #X msg 327 -164 listen 59120;
+#X text 272 397 HACKING NIMES;
 #X connect 1 0 5 0;
 #X connect 2 0 6 0;
 #X connect 3 0 1 0;
@@ -40,6 +41,7 @@
 #X connect 9 0 3 0;
 #X connect 10 0 4 0;
 #X connect 11 0 0 0;
+#X connect 11 0 0 1;
 #X connect 12 0 0 1;
 #X connect 13 0 5 0;
 #X connect 14 0 23 0;

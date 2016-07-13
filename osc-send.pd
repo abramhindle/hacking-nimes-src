@@ -1,4 +1,4 @@
-#N canvas 1 73 463 708 10;
+#N canvas 1 58 387 708 10;
 #X obj 45 577 loadbang;
 #X obj 28 640 netsend -u -b;
 #X obj 27 507 list prepend send;
@@ -6,11 +6,12 @@
 #X floatatom 27 453 5 0 0 0 - - -, f 5;
 #X obj 134 555 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 28 19 vsl 300 400 0 127 0 0 empty empty empty 0 -9 0 10 -232576
--1 -1 28500 0;
+#X obj 31 31 vsl 300 400 0 127 0 0 empty empty empty 0 -9 0 10 -232576
+-1 -1 12600 0;
 #X obj 27 479 oscformat /one/x;
 #X msg 45 608 connect 127.0.0.1 59120;
 #X text 184 531 I SEND MESSAGES TO 59120;
+#X text 214 477 HACKING NIMES;
 #X connect 0 0 8 0;
 #X connect 2 0 3 0;
 #X connect 3 0 1 0;
